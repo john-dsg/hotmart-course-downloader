@@ -1,0 +1,44 @@
+# Conteúdo dos cursos e arquivos temporários
+Cursos/
+temp/
+*.part
+*.part.*
+
+# Credenciais, sessões e configuração local
+.env
+.env.*
+!.env.example
+config_local.py
+cookies*.txt
+*cookie*.json
+*session*.json
+*token*.json
+credentials*.json
+secrets*.json
+
+# Logs e respostas de depuração
+*.log
+log.txt
+api_response_debug.json
+debug.txt
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Ambientes virtuais e IDEs
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Sistema operacional
+Thumbs.db
+Desktop.ini
+.DS_Store
