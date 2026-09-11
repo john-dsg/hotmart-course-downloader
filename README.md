@@ -122,6 +122,19 @@ estrutura completa de pastas com:
 .\.venv\Scripts\python.exe organize_browser_course.py "Cursos\Curso\indice.json"
 ```
 
+Para gerar uma entrega enxuta, sem aulas vazias e sem separar descrição e links em
+arquivos diferentes, use um arquivo JSON de curadoria e execute:
+
+```powershell
+.\.venv\Scripts\python.exe curate_course_output.py `
+  "Cursos\Curso\indice.json" `
+  "Cursos\Curso\curated_details.json" `
+  "C:\caminho\para\Curso-curado"
+```
+
+Só entram aulas com links selecionados ou arquivos reais em `Materiais`. A pasta de
+materiais só é criada quando contém pelo menos um arquivo.
+
 ### Limitações de autenticação e vídeo
 
 O fluxo principal implementa somente email e senha e não importa cookies, tokens ou
